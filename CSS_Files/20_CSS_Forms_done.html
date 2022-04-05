@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS forms</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome.min.css">
+    <link rel="stylesheet" href="animate.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-image: url("img/image5.jpeg");
+            background-size: cover;
+        }
+        .form-div{
+            border: 2px solid blue; 
+            width: 300px;
+            text-align: center;
+            border-radius: 15px;
+            background-image: url("img/image6.jpeg");
+            background-size: cover;
+            box-shadow: 0 0 15px green;
+        }
+        .form-div h2{
+            color: blue;
+        }
+        input[type= 'text'], input[type= 'password']{
+            height: 25px;
+            text-align: center;
+            border: 2px solid blue;
+            margin: 5px;
+            font-size: 18px;
+            border-radius: 30px;
+        }
+        input[type= 'text']:focus, input[type= 'password']:focus{
+            outline: none;
+            background-color: lightblue;
+        }
+        input[type= 'submit']{
+            background-color: blue;
+            color: white;
+            border: none;
+            font-size: 18px;
+            padding: 8px 40px;
+            border-radius: 50px;
+            margin: 5px 0 10px 0;
+
+        }
+        input[type= 'submit']:hover{
+            opacity: 8;
+            cursor: pointer;
+            box-shadow: 0 0 15px lightblue;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Login Form -->
+    <div class="form-div animated flip">
+        <h2>Login Here</h2>
+        <form>
+            <input type="text" placeholder="User Name">
+            <br>
+            <input type="password" placeholder="Password">
+            <br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+</body>
+</html>
